@@ -1,0 +1,530 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="font-ambit">
+    <div class="relative outcome">
+        <!-- Mobile -->
+        <div class="w-full sm:hidden block bg-white grid grid-cols-2 md:grid-cols-4 gap-1 md:gap-3 md:items-start fixed bottom-0 z-40 p-5 md:rounded-t-lg">
+            <div class="col-span-2 font-bold flex items-center space-x-2">
+                <div>Resultaat</div>
+                <svg class="fill-gray-500 w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/></svg>
+            </div>
+            <div class="col-span-1">
+                <div>
+                    <label for="brutoverloning" class="block">Bruto verloning</label>
+                    <div class="mt-2 text-2xl font-bold">
+                        € 3800,00
+                    </div>
+                  </div>
+            </div>
+            <div class="col-span-1">
+                <div>
+                    <label for="nettoverloning" class="block">Netto verloning</label>
+                    <div class="mt-2 text-2xl font-bold">
+                        € 2352,45
+                    </div>
+                  </div>
+            </div>
+    </div>
+    <header>
+        <div class="relative overflow-hidden">
+            <div class="relative bg-gradient-to-r from-red to-yellow">
+                    <div class="max-w-7xl mx-auto pt-3 px-4 md:px-6 md:pt-14">
+                        <nav class="relative flex items-center justify-between sm:h-10 md:justify-center" aria-label="Global">
+                            <div class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0 p-1">
+                                <div class="flex items-center justify-between w-full md:w-auto">
+                                    <a href="#">
+                                    <img class="h-8 w-auto sm:h-10" src="/image/Logo V2.svg" alt="">
+                                    </a>
+                                    <div class="order-first -mr-2 flex items-center md:hidden">
+                                    <button type="button" class="rounded-md p-2 inline-flex items-center justify-center text-white hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
+                                        <span class="sr-only">Open main menu</span>
+                                        <!-- Heroicon name: outline/menu -->
+                                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                                        </svg>
+                                    </button>
+                                    </div>
+                                    <!-- Profile dropdown -->
+                                    <div class="ml-3 relative md:hidden">
+                                        <div>
+                                        <button type="button" class="flex focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                                            <span class="sr-only">Open user menu</span>
+                                            <img class="h-8 w-8" src="../image/Group 3009.svg" alt="">
+                                        </button>
+                                        </div>
+                            
+                                        <!--
+                                        Dropdown menu, show/hide based on menu state.
+                            
+                                        Entering: "transition ease-out duration-100"
+                                            From: "transform opacity-0 scale-95"
+                                            To: "transform opacity-100 scale-100"
+                                        Leaving: "transition ease-in duration-75"
+                                            From: "transform opacity-100 scale-100"
+                                            To: "transform opacity-0 scale-95"
+                                        -->
+                                        <div class="hidden origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+                                            <!-- Active: "bg-gray-100", Not Active: "" -->
+                                            <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Jouw profiel</a>
+                                            <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Hulp nodig?</a>
+                                            <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Uitloggen</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hidden md:flex md:space-x-10">
+                            <a href="#" class="font-bold text-white border-b-4 border-yellow hover:text-yellow">Werkenden</a>
+                
+                            <a href="#" class="font-bold text-white hover:text-yellow">Opdrachtgevers</a>
+                
+                            <a href="#" class="font-bold text-white hover:text-yellow">Voordelen</a>
+                
+                            <a href="#" class="font-bold text-white hover:text-yellow">Over ons</a>
+                            </div>
+                            <div class="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
+                                <a class="font-bold text-white pr-3 hover:text-yellow" href="#">Inloggen</a>
+                                <button type="button" class="flex items-center bg-gradient-to-r from-blue to-cyan rounded-lg px-5 py-3 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-bold text-white">
+                                    Schrijf je in
+                                    <svg class="ml-3 -mr-1 h-4 w-4 fill-cyan" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"/></svg>
+                                </button>
+                            </div>
+                        </nav>
+                        <h1 class="font-bold text-white text-4xl sm:text-6xl pt-10 sm:pt-20">Bereken verloning</h1>
+                        <p class="text-white pt-4 pb-14 sm:pb-20">Bekijk welke voordelen het jou kan bieden en sluit je vrijblijvend aan.</p>
+                    </div>
+            
+                    <!--
+                      Mobile menu, show/hide based on menu open state.
+            
+                      Entering: "duration-150 ease-out"
+                        From: "opacity-0 scale-95"
+                        To: "opacity-100 scale-100"
+                      Leaving: "duration-100 ease-in"
+                        From: "opacity-100 scale-100"
+                        To: "opacity-0 scale-95"
+                    -->
+                    <!-- Zet op hidden voor demo -->
+                    <div class="hidden absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+                        <div class="rounded-lg shadow-md bg-dark-blue ring-1 ring-black ring-opacity-5 overflow-hidden">
+                            <div class="px-5 pt-4 flex items-center justify-between">
+                                <div>
+                                    <img class="h-8 w-auto" src="/image/Logo V2.svg" alt="">
+                                </div>
+                            <div class="-mr-2">
+                                <button type="button" class="p-2 inline-flex items-center justify-center text-yellow hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                                    <span class="sr-only">Close main menu</span>
+                                    <!-- Heroicon name: outline/x -->
+                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="px-2 pt-2 pb-3 space-y-1">
+                          <a href="#" class="block px-3 py-2 rounded-md text-base font-bold text-white hover:text-gray-900 hover:bg-gray-50">Werkenden</a>
+            
+                          <a href="#" class="block px-3 py-2 rounded-md text-base font-bold text-white hover:text-gray-900 hover:bg-gray-50">Opdrachtgevers</a>
+            
+                          <a href="#" class="block px-3 py-2 rounded-md text-base font-bold text-white hover:text-gray-900 hover:bg-gray-50">Voordelen</a>
+            
+                          <a href="#" class="block px-3 py-2 rounded-md text-base font-bold text-white hover:text-gray-900 hover:bg-gray-50">Over ons</a>
+                        </div>
+                        <a href="#" class="block w-full px-5 py-3 text-center font-bold text-white bg-blue hover:bg-gray-100 hover:text-indigo-700"> Log in </a>
+                      </div>  
+                    </div>     
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto py-8 md:py-24 px-4 grid grid-cols-2 gap-x-14">
+            <!--
+        This example requires Tailwind CSS v2.0+ 
+        
+        This example requires some changes to your config:
+        
+        ```
+        // tailwind.config.js
+        module.exports = {
+            // ...
+            plugins: [
+            // ...
+            require('@tailwindcss/forms'),
+            ],
+        }
+        ```
+        -->
+        <form class="row-span-5 space-y-8 col-span-2 sm:col-span-1 rounded-t-lg sm:rounded-b-lg p-5 shadow-2xl drop-shadow-2xl order-2 sm:order-1">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:items-start">
+                <div class="col-span-2 font-bold flex items-center space-x-2">
+                    <div>Inkomsten</div>
+                    <svg class="fill-gray-500 w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/></svg>
+                </div>
+                <div class="col-span-1">
+                    <div>
+                        <label for="uurtarief" class="block">Uurtarief</label>
+                        <div class="mt-2">
+                          <input type="uurtarief" name="uurtarief" id="uurtarief" class="p-3 shadow-sm focus:ring-blue focus:border-blue block w-full border-grey-400 border-2 rounded-md" placeholder="€ 25" aria-describedby="uurtarief-description">
+                        </div>
+                        <p class="mt-2 text-sm text-gray-500" id="uurtarief-description">We'll only use this for spam.</p>
+                      </div>
+                </div>
+                <div class="col-span-1">
+                    <div>
+                        <label for="urenpm" class="block">Uren p.m.</label>
+                        <div class="mt-2">
+                          <input type="renpmf" name="urenpm" id="urenpm" class="p-3 shadow-sm focus:ring-blue focus:border-blue block w-full border-grey-400 border-2 rounded-md" placeholder="160" aria-describedby="urenpm-description">
+                        </div>
+                        <p class="mt-2 text-sm text-gray-500" id="urenpm-description">We'll only use this for spam.</p>
+                      </div>
+                </div>
+            </div>
+            <div class="md:grid sm:grid-cols-2 md:items-start">
+                <div class="sm:col-span-1 font-bold flex items-center space-x-3 mb-3">
+                    <div>Factuurbedrag</div>
+                    <svg class="fill-gray-500 w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/></svg>
+                </div>
+                <div class="md:col-span-1">
+                    <div>
+                        <label for="factuurbedrag" class="block mb-2">Totaal (excl. btw)</label>
+                        <div class="mt-2">
+                          <input type=factuurbedrag" name="factuurbedrag" id="factuurbedrag" class="p-3 shadow-sm focus:ring-blue focus:border-blue block w-full border-grey-400 border-2 rounded-md" placeholder="€ 4.000,00" aria-describedby="factuurbedrag-description">
+                        </div>
+                        <p class="mt-2 text-sm text-gray-500" id="uurtarief-description">We'll only use this for spam.</p>
+                      </div>
+                </div>
+            </div>
+            <div class="md:grid md:grid-cols-2 sm:items-start space-y-3">
+                <div class="md:col-span-1 font-bold flex items-center space-x-3 mt-3">
+                    <div>Leeftijd</div>
+                    <svg class="fill-gray-500 w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/></svg>
+                </div>
+                <div class="md:col-span-1">
+                    <div>
+                        <label for="leeftijd" class="block mb-2">Leeftijd</label>
+                        <div class="mt-2 grid grid-cols-5 divide-x rounded-md border-grey-400 border-2">
+                          <input type=leeftijd" name="leeftijd" id=leeftijdg" class="col-span-3 p-3 focus:ring-blue focus:border-blue block w-full" placeholder="23" aria-describedby="leeftijd-description">
+                          <button data-action="decrement" class="h-full w-full cursor-pointer outline-none border-x-grey-400">
+                            <span class="m-auto text-2xl font-thin">−</span>
+                          </button>
+                          <button data-action="increment" class="h-full w-full cursor-pointer outline-none border-x-grey-400">
+                            <span class="m-auto text-2xl font-thin">+</span>
+                          </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:grid md:grid-cols-2 md:items-start">
+                <div class="md:col-span-1 font-bold flex items-center space-x-2 mb-3">
+                    <div>Sociale zekerheid</div>
+                    <svg class="fill-gray-500 w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/></svg>
+                </div>
+                <div class="relative flex items-center">
+                    <div class="flex items-center h-5">
+                      <input id="socialezekerheid" aria-describedby="sociakezekerheid-description" name="socialezekerheid" type="checkbox" class="focus:ring-blue h-6 w-6 text-indigo-600 border-neutral-400 rounded">
+                    </div>
+                    <div class="ml-3 flex flex-col">
+                      <label for="socialezekerheid">Sociaal verzekerd</label>
+                    </div>
+                  </div>
+            </div>
+            <div class="md:grid md:grid-cols-2 md:items-start">
+                <div class="md:col-span-1 font-bold flex items-center space-x-2 mb-3">
+                    <div>Loonheffingskorting</div>
+                    <svg class="fill-gray-500 w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/></svg>
+                </div>
+                <div class="relative flex items-center">
+                    <div class="flex items-center h-5">
+                      <input id="loonheffingskorting" aria-describedby="loonheffingskorting-description" name="loonheffingskorting" type="checkbox" class="focus:ring-indigo-500 h-6 w-6 text-indigo-600 border-neutral-400 rounded">
+                    </div>
+                    <div class="ml-3 flex flex-col">
+                      <label for="Loonheffingskorting">Loonheffingskorting</label>
+                    </div>
+                  </div>
+            </div>
+            <div class="md:grid md:grid-cols-2 md:items-start">
+                <div class="md:col-span-1 font-bold flex items-center space-x-2 mb-3">
+                    <div>Sparen</div>
+                    <svg class="fill-gray-500 w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/></svg>
+                </div>
+                <div class="space-y-5 mt-1">
+                    <div class="relative flex items-center">
+                        <div class="flex items-center h-5">
+                          <input id="vakantiegeld" aria-describedby="vakantiegeld-description" name="vakantiegeld" type="checkbox" class="focus:ring-indigo-500 h-6 w-6 text-indigo-600 border-neutral-400 rounded">
+                        </div>
+                        <div class="ml-3 flex flex-col">
+                          <label for="vakantiegeld">Vakantiegeld</label>
+                        </div>
+                      </div>
+                    <div class="relative flex items-centert">
+                        <div class="flex items-center h-5">
+                          <input id="flexibelsparen" aria-describedby="flexibelsparen-description" name="flexibelsparen" type="checkbox" class="focus:ring-indigo-500 h-6 w-6 text-indigo-600 border-neutral-400 rounded">
+                        </div>
+                        <div class="ml-3 flex flex-col">
+                          <label for="flexibelsparen">Flexibel sparen</label>
+                        </div>
+                      </div>
+                      <div class="md:col-span-1">
+                        <div>
+                            <div class="mt-2 grid grid-cols-5 divide-x rounded-md border-grey-400 border-2">
+                              <input type=percentageflexibelsparen" name="percentageflexibelsparen" id=percentageflexibelsparen" class="col-span-3 p-3 focus:ring-blue focus:border-blue block w-full" placeholder="10%" aria-describedby="percentageflexibelsparen-description">
+                              <button data-action="decrement" class="h-full w-full cursor-pointer outline-none border-x-grey-400">
+                                <span class="m-auto text-2xl font-thin">−</span>
+                              </button>
+                              <button data-action="increment" class="h-full w-full cursor-pointer outline-none border-x-grey-400">
+                                <span class="m-auto text-2xl font-thin">+</span>
+                              </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:grid md:grid-cols-2 md:items-start">
+                <div class="md:col-span-1 font-bold flex items-center space-x-2 mb-3">
+                    <div>Ziekteverzuim</div>
+                    <svg class="fill-gray-500 w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/></svg>
+                </div>
+                <div class="space-y-5 mt-1">
+                    <div class="relative flex items-center">
+                        <div class="flex items-center h-5">
+                          <input id="ziekteverzuim" aria-describedby="ziekteverzuim-description" name="ziekteverzuim" type="checkbox" class="focus:ring-indigo-500 h-6 w-6 text-indigo-600 border-neutral-400 rounded">
+                        </div>
+                        <div class="ml-3 flex flex-col">
+                          <label for="ziekteverzuim">Ziekteverzuim</label>
+                        </div>
+                      </div>
+                    <div class="relative flex items-centert">
+                        <div class="flex items-center h-5">
+                          <input id="aov" aria-describedby="aov-description" name="aov" type="checkbox" class="focus:ring-indigo-500 h-6 w-6 text-indigo-600 border-neutral-400 rounded">
+                        </div>
+                        <div class="ml-3 flex flex-col">
+                          <label for="aov">Arbeidsongeschiktheid<wbr>verzekering (AOV)</label>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="md:grid sm:grid-cols-2 md:items-start">
+                <div class="md:col-span-1 font-bold flex items-center space-x-2 mb-3">
+                    <div>Zekerheid</div>
+                    <svg class="fill-gray-500 w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/></svg>
+                </div>
+                <div class="space-y-5 mt-1">
+                    <div class="relative flex items-center">
+                        <div class="flex items-center h-5">
+                          <input id="factoring" aria-describedby="factoring-description" name="factoring" type="checkbox" class="focus:ring-indigo-500 h-6 w-6 text-indigo-600 border-neutral-400 rounded">
+                        </div>
+                        <div class="ml-3 flex flex-col">
+                          <label for="factoring">Factoring</label>
+                        </div>
+                      </div>
+                    <div class="relative flex items-centert">
+                        <div class="flex items-center h-5">
+                          <input id="pensioen" aria-describedby="pensioen-description" name="pensioen" type="checkbox" class="focus:ring-indigo-500 h-6 w-6 text-indigo-600 border-neutral-400 rounded">
+                        </div>
+                        <div class="ml-3 flex flex-col">
+                          <label for="pensioen">Pensioen (%)</label>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="md:grid sm:grid-cols-2 md:items-start">
+                <div class="md:col-span-1 font-bold flex items-center space-x-2 mb-3">
+                    <div>Zekerheid</div>
+                    <svg class="fill-gray-500 w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/></svg>
+                </div>
+                <div class="space-y-5 mt-1">
+                    <div class="relative flex items-center">
+                        <div class="flex items-center h-5">
+                          <input id="factoring" aria-describedby="factoring-description" name="factoring" type="checkbox" class="focus:ring-indigo-500 h-6 w-6 text-indigo-600 border-neutral-400 rounded">
+                        </div>
+                        <div class="ml-3 flex flex-col">
+                          <label for="factoring">Factoring</label>
+                        </div>
+                      </div>
+                    <div class="relative flex items-centert">
+                        <div class="flex items-center h-5">
+                          <input id="pensioen" aria-describedby="pensioen-description" name="pensioen" type="checkbox" class="focus:ring-indigo-500 h-6 w-6 text-indigo-600 border-neutral-400 rounded">
+                        </div>
+                        <div class="ml-3 flex flex-col">
+                          <label for="pensioen">Pensioen (%)</label>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="md:grid md:grid-cols-2 md:items-start">
+                <div class="md:col-span-1 font-bold flex items-center space-x-2 mb-3">
+                    <div>Onkosten</div>
+                    <svg class="fill-gray-500 w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/></svg>
+                </div>
+                <div class="relative flex items-center">
+                    <div class="flex items-center h-5">
+                      <input id="meefactureren" aria-describedby="meefactureren-description" name="meefactureren" type="checkbox" class="focus:ring-blue h-6 w-6 text-indigo-600 border-neutral-400 rounded">
+                    </div>
+                    <div class="ml-3 flex flex-col">
+                      <label for="meefactureren">Meefactureren</label>
+                    </div>
+                  </div>
+            </div>
+        </form>
+
+        <div class="col-span-2 sm:col-span-1 order-1 sm:order-2">
+            <h2 class="font-bold text-4xl sm:text-5xl leading-tight">Jouw persoonlijke loonstrook</h2>
+            <p class="leading-relaxed text-xl my-3">Direct zien wat jij netto op je rekening gestort krijgt? Ontdek de mogelijkheden van onze collectie aan tools. Makkelijk, eerlijk en transparant, daar houden we van.</p>
+        </div>
+
+        <div class="relative col-span-2 sm:col-span-1 sm:rounded-t-lg rounded-b-lg shadow-2xl drop-shadow-2xl order-3">
+            <div class="hidden sm:grid bg-white grid-cols-4 gap-3 items-start p-5 sm:rounded-t-lg">
+                <div class="md:col-span-2 font-bold flex items-center space-x-2">
+                    <div>Resultaat</div>
+                    <svg class="fill-gray-500 w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/></svg>
+                </div>
+                <div class="col-span-4 md:col-span-1">
+                    <div>
+                        <label for="brutoverloning" class="block">Bruto verloning</label>
+                        <div class="mt-2 text-2xl font-bold">
+                            € 3800,00
+                        </div>
+                      </div>
+                </div>
+                <div class="col-span-4 md:col-span-1">
+                    <div>
+                        <label for="nettoverloning" class="block">Netto verloning</label>
+                        <div class="mt-2 text-2xl font-bold">
+                            € 2352,45
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="bg-dark-blue p-5 rounded-b-lg">
+                <h2 class="font-bold text-white text-xl sm:text-3xl leading-tight">Klaar voor vooruitgang <br class="hidden sm:block"> in je carrière? </h2>
+                <p class="leading-relaxed text-white mt-3 mb-8">Sluit aan bij meer dan 40.000 werkenden</p>
+                <!-- Stip of geen stip? -->
+                <div class="sm:flex sm:space-x-5 space-x-0 sm:space-y-0 space-y-2">
+                    <button type="button" class="w-full sm:w-fit flex justify-center items-center bg-gradient-to-r from-blue to-cyan rounded-lg px-5 py-3 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-bold text-white">
+                        Schrijf je gratis in
+                        <svg class="ml-3 -mr-1 h-4 w-4 fill-cyan" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"/></svg>
+                    </button>
+                    <button type="button" class="w-full sm:w-fit flex justify-center items-center rounded-lg px-5 py-3 hover:bg-white hover:text-blue focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-bold text-white border-solid border-2 border-white">
+                        Download loonstrook
+                        <svg class="ml-3 -mr-1 h-4 w-4 fill-cyan" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+   
+    </main>
+
+    <footer class="bg-dark-blue">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <div class="brand">
+                <img class="py-4" src="/image/Logo V2 (1).svg" alt="">
+            </div>
+            <div class="flex justify-between flex-col sm:flex-row">
+                <div class="pt-4">
+                    <h3 class="text-sm text-gray-400 tracking-wider">Contact</h3>
+                    <ul role="list" class="mt-4 space-y-4">
+                        <li>
+                        <a href="#" class="text-base text-white text-lg hover:text-yellow"> Kiotoweg 157 </a>
+                        </li>
+        
+                        <li>
+                        <a href="#" class="text-base text-white text-lg hover:text-yellow"> 3047BG Rotterdam </a>
+                        </li>
+        
+                        <li>
+                        <a href="#" class="text-base text-white text-lg hover:text-yellow"> contact@verloning.nl </a>
+                        </li>
+        
+                        <li>
+                        <a href="#" class="text-base text-white text-lg hover:text-yellow"> 010-261-266 </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pt-8">
+                    <h3 class="text-sm text-gray-400 tracking-wider">Dienstverlening</h3>
+                    <ul role="list" class="mt-4 space-y-4">
+                        <li>
+                        <a href="#" class="text-base text-white text-lg hover:text-yellow"> Facturatie </a>
+                        </li>
+        
+                        <li>
+                        <a href="#" class="text-base text-white text-lg hover:text-yellow"> Belasting </a>
+                        </li>
+        
+                        <li>
+                        <a href="#" class="text-base text-white text-lg hover:text-yellow"> Verzekering </a>
+                        </li>
+                    </ul>  
+                </div>
+                        
+        
+                <div class="pt-8">
+                    <h3 class="text-sm text-gray-400 tracking-wider">Leren</h3>
+                      <ul role="list" class="mt-4 space-y-4">
+                        <li>
+                            <a href="#" class="text-base text-white text-lg hover:text-yellow"> Blog </a>
+                          </li>
+            
+                          <li>
+                            <a href="#" class="text-base text-white text-lg hover:text-yellow"> Help center </a>
+                          </li>
+            
+                          <li>
+                            <a href="#" class="text-base text-white text-lg hover:text-yellow"> Opleidingen </a>
+                          </li>
+                      </ul>
+                </div>    
+        
+                <div class="pt-8">
+                    <h3 class="text-sm text-gray-400 tracking-wider">Documenten</h3>
+                      <ul role="list" class="mt-4 space-y-4">
+                        <li>
+                            <a href="#" class="text-base text-white text-lg hover:text-yellow"> Ons verhaal </a>
+                          </li>
+            
+                          <li>
+                            <a href="#" class="text-base text-white text-lg hover:text-yellow"> Partnerships </a>
+                          </li>
+            
+                          <li>
+                            <a href="#" class="text-base text-white text-lg hover:text-yellow"> Contact </a>
+                          </li>
+                      </ul>
+                </div>         
+            </div>
+            <div class="mt-8 border-t border-gray-200 pt-8 md:flex md:items-center md:justify-between">
+                <div class="flex space-x-6 md:order-2">
+                    
+                    <a href="#" class="text-white hover:text-gray-500">
+                        <span class="sr-only">Instagram</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+                        </svg>
+                      </a>
+    
+                    <a href="#" class="text-white  hover:text-gray-500">
+                        <span class="sr-only">Facebook</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+            
+                    <a href="#" class="text-white hover:text-gray-500">
+                        <span class="sr-only">Linkedin</span>
+                        <svg class="h-6 w-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/>
+                        </svg>
+                    </a>  
+                </div>
+                <p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">&copy; 2020 Verloning.nl. All rights reserved.</p>
+              </div>
+        </div>
+      </footer>
+</body>
+</html>

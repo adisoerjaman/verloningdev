@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Ambit";
+    src: url("../font/Ambit-Regular.otf");
+    font-weight: 400;
+  }
+
+@font-face {
+    font-family: "Ambit";
+    src: url("../font/Ambit-Bold.otf");
+    font-weight: 700;
+  }
+
+.rectangle122 {
+    position: absolute;
+    width: 2542.41px;
+    height: 1260.61px;
+    left: 375.41px;
+    top: 494.01px;
+    background: #EDF936;
+    mix-blend-mode: hard-light;
+    border-radius: 300px;
+    transform: matrix(0.85, -0.44, 0.57, 0.88, 0, 0);
+}
+
+.shape {
+  clip-path: polygon(100% 0%, 100% 100%, 34% 100%, 30% 56%);
+}
+
+.shape-1 {
+  width: 100%;
+  height: 35vh;
+  background: #EA356C;
+}
+
+.shape-2 {
+  position: absolute;
+  width: 32rem;
+  height: 32rem;
+  right: -10%;
+  bottom: -5rem;
+  /* background: linear-gradient(179.33deg, #F5C664 0.58%, #EDF936 116.53%); */
+  background: #EDF936;
+  mix-blend-mode: hard-light;
+  border-radius: 100%;
+}
+
+.shape-3 {
+  position: absolute;
+  width: 50rem;
+  height: 50rem;
+  right: -10rem;
+  bottom: -5rem;
+  background: rgba(196, 196, 196, 0.5);
+  filter: blur(300px);
+  backdrop-filter: blur(200px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 100%;
+}
+
+.shape-4 {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  right: -5rem;
+  bottom: -12rem;
+  background: rgba(196, 196, 196, 0.05);
+  filter: blur(200px);
+  backdrop-filter: blur(200px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 100%;
+}
